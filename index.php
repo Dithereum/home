@@ -53,8 +53,8 @@
 
 	      <div class="d-flex gutter gutter-spacious flex-column flex-lg-row flex-items-center height-full px-0 px-lg-3">
 	        <div class="ml-md-n3 mr-md-3 col-12 col-lg-6 text-center text-md-left">
-	          <h1 class="h1-mktg color-text-white mb-3 position-relative z-2"> Where the world builds software </h1>
-	          <p class="f2-mktg text-normal text-gray-light-mktg mr-lg-n4 mb-4 position-relative z-2">Millions of developers and companies build, ship, and maintain their software on Dithereum—the largest and most advanced development platform in the world.</p>
+	          <h1 class="h1-mktg color-text-white mb-3 position-relative z-2"> Where the world builds Dapps </h1>
+	          <p class="f2-mktg text-normal text-gray-light-mktg mr-lg-n4 mb-4 position-relative z-2">Millions of developers and companies build, ship, and maintain their Dapps on Dithereum - the largest and most advanced development platform in the world.</p>
 
 	            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="mx-auto mx-md-0 col-5-max js-signup-form position-relative z-2" autocomplete="off" action="/signup" accept-charset="UTF-8" method="get">              <div class="d-flex flex-column flex-sm-row flex-items-center">
 	                <dl class="col-12 my-0 pb-2 pb-sm-0 pr-0 pr-sm-2 flex-auto">
@@ -80,20 +80,20 @@
 	              <div class="py-4" style="border-top: 1px solid rgba(255,255,255,0.1)">
 	                <div class="d-flex gutter-condensed gutter-md-spacious col-12 col-lg-8 flex-justify-between text-md-left">
 	                  <div class="col-6 col-sm-4 col-md-3">
-	                    <h2 class="f3-mktg text-mono color-text-white text-normal no-wrap">65<span class="text-white-fade">+</span> million</h2>
-	                    <p class="m-0 text-mono text-white-fade f6-mktg">Developers</p>
+	                    <h2 class="f3-mktg text-mono color-text-white text-normal no-wrap">3000<span class="text-white-fade">+</span> </h2>
+	                    <p class="m-0 text-mono text-white-fade f6-mktg">Max TPS</p>
 	                  </div>
 	                  <div class="col-6 col-sm-4 col-md-3">
-	                    <h2 class="f3-mktg text-mono color-text-white text-normal no-wrap">3<span class="text-white-fade">+</span> million</h2>
-	                    <p class="m-0 text-mono text-white-fade f6-mktg">Organizations</p>
+	                    <h2 class="f3-mktg text-mono color-text-white text-normal no-wrap">3<span class="text-white-fade"></span> seconds</h2>
+	                    <p class="m-0 text-mono text-white-fade f6-mktg">Block Interval</p>
 	                  </div>
 	                  <div class="col-sm-4 col-md-3 d-none d-md-block">
-	                    <h2 class="f3-mktg text-mono color-text-white text-normal no-wrap">200<span class="text-white-fade">+</span> million</h2>
-	                    <p class="m-0 text-mono text-white-fade f6-mktg">Repositories</p>
+	                    <h2 class="f3-mktg text-mono color-text-white text-normal no-wrap">10<span class="text-white-fade">+</span> seconds</h2>
+	                    <p class="m-0 text-mono text-white-fade f6-mktg">Tx Finality</p>
 	                  </div>
 	                  <div class="col-3 d-none d-sm-block">
-	                    <h3 class="f3-mktg text-mono color-text-white text-normal no-wrap">72%</h3>
-	                    <p class="m-0 text-mono text-white-fade f6-mktg">Fortune 50</p>
+	                    <h3 class="f3-mktg text-mono color-text-white text-normal no-wrap">DPoS</h3>
+	                    <p class="m-0 text-mono text-white-fade f6-mktg">High Speeed Consensus</p>
 	                  </div>
 	                </div>
 	              </div>
