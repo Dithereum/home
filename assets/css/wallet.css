@@ -1,0 +1,33 @@
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.ml-2{
+	margin-left: 16px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-link {
+	font-size: 14px;
+	font-weight: 500;
+    display: block;
+    padding: 0.5rem 1rem;
+    color: rgba(117, 117, 117, 1);
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.nav-link:hover {
+	text-decoration: none;
+}
