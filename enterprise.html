@@ -82,6 +82,10 @@ margin-right: 0;
 	width: 50%!important;
 }
 
+.home-hero-container-enterprise{
+	height: 94vh;
+    min-height: 700px!important;
+}
 
 
 @media (min-width: 768px){
@@ -168,15 +172,6 @@ $("#header").load("header.html");
 $("#footer").load("footer.html"); 
 });
 
-
-// $(document).click(function () {
-//     if($(this).hasClass('open')) {
-//     	$(".dropdown-menu").hide();
-//     }
-// });
-// $(document).click(function(){
-//   $(".dropdown-menu").hide();
-// });
 </script> 
 
 <script crossorigin="anonymous" defer="defer" type="application/javascript" src="assets/environment-35e7e763.js"></script>
@@ -325,9 +320,9 @@ data-issue-and-pr-hovercards-enabled
 >
 <main class="font-mktg">
 <div class="overflow-hidden">
-<div class="home-hero-container position-relative js-webgl-globe-data">
-<div class="home-hero position-absolute z-1 top-0 right-0 bottom-0 left-0 overflow-hidden">
-<div class="d-flex flex-column flex-justify-between mx-auto container-xl p-responsive height-full pb-md-9">
+<div class="home-hero-container home-hero-container-enterprise position-relative js-webgl-globe-data">
+<div class="home-hero position-absolute z-1 top-0 right-0 bottom-0 left-0 overflow-hidden pb-0">
+<div class="d-flex flex-column flex-justify-between mx-auto container-xl p-responsive height-full">
 
 <div class="d-flex gutter gutter-spacious flex-column flex-lg-row flex-items-center height-full px-0 px-lg-3">
 <div class="ml-md-n3 mr-md-3 col-12 col-lg-6 text-center text-md-left">
@@ -351,21 +346,19 @@ data-issue-and-pr-hovercards-enabled
 
 <div class="col-12 col-lg-6 text-center position-relative" style="
 ">
-<div class="home-globe-container home-globe-container-webgl" data-feature="home_page_globe" data-show-when-feature-enabled="true" data-feature-hydro="{&quot;event_type&quot;:&quot;feature_flag_decision&quot;,&quot;payload&quot;:{&quot;feature&quot;:&quot;home_page_globe&quot;,&quot;originating_url&quot;:&quot;&quot;,&quot;user_id&quot;:null}}" data-feature-hydro-hmac="be0cbc7da2f32edf891ea5670441a984e859ce28aaba3fb91263d03f7c5a368d">
-<div class="mx-auto width-full mt-n9 mt-lg-2 home-globe position-relative height-full js-webgl-globe">
+<div class="mx-auto width-full mt-lg-2 home-globe position-relative height-full js-webgl-globe">
 
-				<video width="900" height="900" src="assets/video/video6.mp4" loop muted autoplay></video>
-
+				<!-- <video width="900" height="900" src="assets/video/video6.mp4" loop muted autoplay></video> -->
+		<img src="assets/images/enterprise-cover-image.png" alt="enterprises" style="width: 100%;">
 	
 </div>
-</div>
 
-<div class="home-globe-container" data-feature="home_page_globe" data-show-when-feature-enabled="false" hidden="">
+<!-- <div class="home-globe-container" data-feature="home_page_globe" data-show-when-feature-enabled="false" hidden="">
 <div class="mx-auto width-full mt-n9 mt-lg-2 home-globe position-relative height-full">
 <img srcset="https://Dithereum.Dithereumassets.com/images/modules/site/home/globe-700.jpg 700w,
 https://Dithereum.Dithereumassets.com/images/modules/site/home/globe.jpg 1400w" sizes="(max-width: 700px) 70vw, 700px" src="https://Dithereum.Dithereumassets.com/images/modules/site/home/globe.jpg" alt="Planet earth with visualization of Dithereum activity crossing the globe" class="width-full height-auto js-globe-fallback-image" loading="lazy" decoding="async" width="1238" height="1404">
 </div>
-</div>
+</div> -->
 </div>
 
 </div>
@@ -377,7 +370,7 @@ https://Dithereum.Dithereumassets.com/images/modules/site/home/globe.jpg 1400w" 
 </video>
 </div>
 
-<div class="position-absolute width-full color-bg-primary" style="bottom: 1rem;">
+<!-- <div class="position-absolute width-full color-bg-primary" style="bottom: 1rem;">
 <div class="container-xl p-responsive">
 <div class="d-flex flex-justify-center flex-lg-justify-end color-bg-primary">
 <div class="col-8 col-sm-7 col-md-6 col-lg-5 position-relative z-2 right-lg-n12 events-none">
@@ -388,7 +381,7 @@ https://Dithereum.Dithereumassets.com/images/modules/site/home/globe.jpg 1400w" 
 </div>
 </div>
 </div>
-</div>
+</div> -->
 
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 1680 40" class="position-absolute width-full z-1" style="bottom: -1px;"><path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path></svg>
 
@@ -457,7 +450,7 @@ https://Dithereum.Dithereumassets.com/images/modules/site/home/globe.jpg 1400w" 
 
 <div class="col-11 col-sm-10 offset-1">
 <ul class="home-git-log-dark d-flex gutter gutter-spacious flex-column list-style-none pb-5">
-<li class="col-12 col-md-9 col-lg-6 mt-n3 pb-4">
+<li class="col-12 col-md-12 col-lg-12 mt-n3 pb-4">
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="28" viewBox="0 0 28 20" width="28" aria-hidden="true" class="home-git-icon home-git-item float-left mr-n6 position-relative z-1"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
 
 <h3 class="f2-mktg text-gray-light-mktg text-semibold mb-3"> <span class="color-text-white"> 
@@ -502,7 +495,7 @@ Whether you want to launch your own blockchain platform like Dithereum or you ar
 <div class="col-12 col-lg-6" aria-hidden="true">
 <div class="position-relative">
 	<div class="rounded-2 home-packages-terminal f5-mktg p-4 text-mono">
-		<pre class="pre-line color-text-white home-pre js-type-in">
+		<!-- <pre class="pre-line color-text-white home-pre js-type-in">
 			<span class="text-bold code-pink">→</span> <span class="text-bold code-green">~/dithereum-demo</span> <span class="js-type-letters">npm install web3</span>
 			<span class="js-type-row">+ web3@1.5.2</span>
 			<span class="js-type-row">&nbsp;&nbsp;added 109 packages from 64 contributors and audited 109 packages in 3.491s</span>
@@ -512,7 +505,8 @@ Whether you want to launch your own blockchain platform like Dithereum or you ar
 			<span class="js-type-row"></span>
 			<span class="js-type-row">found 0 vulnerabilities</span>
 			<span class="js-type-row"><span class="text-bold code-pink">→</span> <span class="text-bold code-green">~/dithereum-demo</span></span> <span class="js-type-letters"> </span>
-		</pre>
+		</pre> -->
+		<img src="assets/images/blockchain-enterprise.jpg" alt="blockchain-enterprise" style="width: 100%;">
 	</div>
 
 	<img src="assets/images/repo-terminal-glow.svg" class="position-absolute z-n1" style="width: 150%; margin: 0 -25%; top: 50%; transform: translateY(-50%);" alt="Light glowing behind the editor" loading="lazy">
@@ -522,7 +516,7 @@ Whether you want to launch your own blockchain platform like Dithereum or you ar
 </li>
 
 <br>
-<div class="d-flex flex-column flex-sm-row flex-items-center">
+<div class="d-flex flex-column flex-sm-row22 flex-items-center">
 		
 		<a href="mailto: contact@dithereum.org" 
 		class="btn-mktg btn-primary-mktg width-full width-sm-auto">
