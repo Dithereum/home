@@ -10,6 +10,9 @@
 <link crossorigin="anonymous" media="all" rel="stylesheet" href="assets/behaviors-dbc725588aaef4eab4c5384e5c470707.css" />
 
 <style>
+
+
+
 .home-hero-container {
 min-height: 750px;
 max-height: 926px;
@@ -23,12 +26,140 @@ background-color: #000000!important;
 .bg-gray-dark-mktg {
 background-color: #000000!important;
 }
+.home-astro-mona {
+left: 50%!important;
+max-width: 234px!important;
+}
+
+.pricing-tabel {
+/*background-image: url("assets/images/pricingtabel.jpg");
+height: 600px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;*/
+color: #ffffff;
+}
+.pricing-tabel .list-style-none .mr-15{
+margin-right: 30px;
+}
+.pricing-tabel ul li{
+list-style-type: none;
+
+}
+.pricing-tabel ul li .card {
+text-align: center;
+}
+.pricing-tabel ul li .card ul li{
+margin-bottom: 15px;
+text-align: center;
+}
+
+.pricing-tabel ul li .card img{
+width: 30px;
+}
+
+.pricing-tabel ul li:first-child .card{
+border: none;
+box-shadow: none;
+text-align: left;
+}
+.pricing-tabel ul li .card{
+background-color: transparent;
+width: 8rem;
+border: 2px	solid #ffffff;
+border-radius: 4px;
+padding: 10px;
+box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.pricing-tabel .list-style-none .mr-15:last-child {
+margin-right: 0;
+}
+.build-in-animate .home-nav .home-nav-hidden {
+    flex: none!important;
+}
+.btn-transparent{
+	width: 50%!important;
+}
+
+
+
+@media (min-width: 768px){
+	.home-repo-editor {
+	    padding-top: calc(500 / 1248 * 100%)!important;
+	}
+}
+@media (min-width: 1012px){
+.col-10-max {
+max-width: 80%!important;
+}
+
+
+}
+
+@media (min-width: 1012px){
+	.home-globe-container-video, .home-globe-container-webgl {
+	    left: 0;
+	    width: 900px;
+	    height: 900px;
+	    margin-left: -250px!important;
+	}
+}
+
+@media (min-width: 1200px){
+	.home-globe-container-video, .home-globe-container-webgl {
+	    left: 0;
+	    width: 900px;
+	    height: 900px;
+	    margin-left: -150px!important;
+	}
+}
+
+@media screen (min-width: 768px) and (max-width: 1024px){
+	.home-globe-container-video, .home-globe-container-webgl{
+		left: auto!important;
+	}
+	.text-md-left {
+	    text-align: right !important;
+	}
+	
+}
+@media (max-width: 768px){
+
+	.btn-transparent{
+		margin-bottom: 0px;
+    	margin-right: 15!important;
+	}
+
+	.home-astro-mona{
+		display: none;
+	}
+
+	.btn-transparent{
+		width: 50%!important;
+	}
+
+	.btn-primary-mktg{
+		width: 50%!important;
+	}
+
+	.home-repo-editor {
+    	min-height: 500px;
+	}
+
+@media (max-width: 576px){
+	
+	.btn-transparent{
+		margin-bottom: 15px;
+    	margin-right: 0!important;
+	}
+}
+
 </style>
 
 <link crossorigin="anonymous" media="all" rel="stylesheet" href="assets/dithereum-4a950b722035c96861c25c2d643184e8.css" />
 <link crossorigin="anonymous" media="all" rel="stylesheet" href="assets/site-95582afbc21b7e3a2eaeddeb803f7606.css" />
 <link crossorigin="anonymous" media="all" rel="stylesheet" href="assets/home-eb5baa36b2f8e14e68ee71c46f608925.css" />
-<link crossorigin="anonymous" media="all" rel="stylesheet" href="assets/css/wallet.css" />
 
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script> 
@@ -36,6 +167,16 @@ $(function(){
 $("#header").load("header.html"); 
 $("#footer").load("footer.html"); 
 });
+
+
+// $(document).click(function () {
+//     if($(this).hasClass('open')) {
+//     	$(".dropdown-menu").hide();
+//     }
+// });
+// $(document).click(function(){
+//   $(".dropdown-menu").hide();
+// });
 </script> 
 
 <script crossorigin="anonymous" defer="defer" type="application/javascript" src="assets/environment-35e7e763.js"></script>
@@ -102,8 +243,8 @@ $("#footer").load("footer.html");
 <meta name="browser-optimizely-client-errors-url" content="https://api.Dithereum.com/_private/browser/optimizely_client/errors">
 
 <link rel="mask-icon" href="pinned-octocat.svg" color="#000000">
-<link rel="alternate icon" class="js-site-favicon" type="image/png" href="favicons/favicon.png">
-<link rel="icon" class="js-site-favicon" type="image/svg+xml" href="favicons/favicon.svg">
+<link rel="alternate icon" class="js-site-favicon" type="image/png" href="assets/images/DithereumIconFavicon.png">
+
 
 <meta name="theme-color" content="#1e2327">
 
@@ -177,200 +318,236 @@ Learn more about the browsers we support.
 
 
 <include-fragment class="js-notification-shelf-include-fragment" data-base-src="notifications/beta/shelf"></include-fragment>
-
-
-
-
-
 <div class="application-main "
 data-commit-hovercards-enabled
 data-discussion-hovercards-enabled
 data-issue-and-pr-hovercards-enabled
 >
-
-
 <main class="font-mktg">
-	<div class="overflow-hidden">
-		<div class="home-hero-container position-relative js-webgl-globe-data">
-			<div class="home-hero position-absolute z-1 top-0 right-0 bottom-0 left-0 overflow-hidden">
-				<div class="d-flex flex-column flex-justify-between mx-auto container-xl p-responsive height-full pb-md-9">
-					<div class="d-flex gutter gutter-spacious flex-column flex-lg-row flex-items-center height-full px-0 px-lg-3">
-						<div class="ml-md-n3 mr-md-3 col-12 col-lg-6 text-center text-md-left">
-							<h1 class="h1-mktg color-text-white mb-3 position-relative z-2"> BLOG </h1>
-							<p class="f2-mktg text-normal text-gray-light-mktg mr-lg-n4 mb-4 position-relative z-2">Millions of developers and companies build, ship, and maintain their Dapps on Dithereum - the largest and most advanced development platform in the world.</p>
-						</div>
+<div class="overflow-hidden">
+<div class="home-hero-container position-relative js-webgl-globe-data">
+<div class="home-hero position-absolute z-1 top-0 right-0 bottom-0 left-0 overflow-hidden">
+<div class="d-flex flex-column flex-justify-between mx-auto container-xl p-responsive height-full pb-md-9">
 
-						<div class="col-12 col-lg-6 text-center text-md-left position-relative" style="
-						">
-				
-						</div>
+<div class="d-flex gutter gutter-spacious flex-column flex-lg-row flex-items-center height-full px-0 px-lg-3">
+<div class="ml-md-n3 mr-md-3 col-12 col-lg-6 text-center text-md-left">
+	<h1 class="h1-mktg color-text-white mb-3 position-relative z-2"> Blockchain Solution for the Enterprises </h1>
+	<p class="f2-mktg text-normal text-gray-light-mktg mr-lg-n4 mb-4 position-relative z-2"> Dithereum provides a Blockchain-as-a-Service (BaaS) solution for the enterprises to transform their platforms into scalable, immutabile, and interoperable infrastructures to take their businesses to the next level. </p>
 
-					</div>
-				</div>
-
-				<img src="assets/images/hero-glow.svg" alt="Glowing universe" class="position-absolute home-hero-glow events-none z-1">
-				
-			</div>	
-			<svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 1680 40" class="position-absolute width-full z-1" style="bottom: -1px;"><path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path></svg>
-		</div>
-	</div>
-	<div class="overflow-hidden">
-		<div class="mx-auto container-xl p-responsive py-8 py-md-9" style="padding-bottom: 30px!important;">
-			<div class="d-flex gutter gutter-spacious js-build-in-trigger build-in-animate" data-build-margin-bottom="20">
-				<div class="col-10-max mx-auto">
-					<div class="js-build-in-item build-in-scale-fade color-bg-primary rounded-2 overflow-hidden build-in-animate">
-						<div class="d-flex position-relative">
-							<div class="col-12 mx-auto mx-md-0 text-left p-3">
-								<p class="mb-0"><a href="#" style="color: inherit;text-decoration-line: none;">Lorem Ipsum is simply dummy</a></p>
-								<h5><a href="#"style="color: inherit;text-decoration-line: none;">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,</a></h5>
-								<p><span class="date">Oct 25 . 4 min read</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-10-max mx-auto">
-					<div class="js-build-in-item build-in-scale-fade color-bg-primary rounded-2 overflow-hidden build-in-animate">
-						<div class="d-flex position-relative">
-							<div class="col-12 mx-auto mx-md-0 text-left p-3">
-								<p class="mb-0"><a href="#" style="color: inherit;text-decoration-line: none;">Lorem Ipsum is simply dummy</a></p>
-								<h5><a href="#"style="color: inherit;text-decoration-line: none;">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,</a></h5>
-								<p><span class="date">Oct 25 . 4 min read</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-10-max mx-auto">
-					<div class="js-build-in-item build-in-scale-fade color-bg-primary rounded-2 overflow-hidden build-in-animate">
-						<div class="d-flex position-relative">
-							<div class="col-12 mx-auto mx-md-0 text-left p-3">
-								<p class="mb-0"><a href="#" style="color: inherit;text-decoration-line: none;">Lorem Ipsum is simply dummy</a></p>
-								<h5><a href="#"style="color: inherit;text-decoration-line: none;">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,</a></h5>
-								<p><span class="date">Oct 25 . 4 min read</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="d-flex gutter gutter-spacious js-build-in-trigger build-in-animate border-bottom" data-build-margin-bottom="20">
-				<div class="col-10-max mx-auto">
-					<div class="js-build-in-item build-in-scale-fade color-bg-primary rounded-2 overflow-hidden build-in-animate">
-						<div class="d-flex position-relative">
-							<div class="col-12 mx-auto mx-md-0 text-left p-3">
-								<p class="mb-0"><a href="#" style="color: inherit;text-decoration-line: none;">Lorem Ipsum is simply dummy</a></p>
-								<h5><a href="#"style="color: inherit;text-decoration-line: none;">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,</a></h5>
-								<p><span class="date">Oct 25 . 4 min read</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-10-max mx-auto">
-					<div class="js-build-in-item build-in-scale-fade color-bg-primary rounded-2 overflow-hidden build-in-animate">
-						<div class="d-flex position-relative">
-							<div class="col-12 mx-auto mx-md-0 text-left p-3">
-								<p class="mb-0"><a href="#" style="color: inherit;text-decoration-line: none;">Lorem Ipsum is simply dummy</a></p>
-								<h5><a href="#"style="color: inherit;text-decoration-line: none;">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,</a></h5>
-								<p><span class="date">Oct 25 . 4 min read</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-10-max mx-auto">
-					<div class="js-build-in-item build-in-scale-fade color-bg-primary rounded-2 overflow-hidden build-in-animate">
-						<div class="d-flex position-relative">
-							<div class="col-12 mx-auto mx-md-0 text-left p-3">
-								<p class="mb-0"><a href="#" style="color: inherit;text-decoration-line: none;">Lorem Ipsum is simply dummy</a></p>
-								<h5><a href="#"style="color: inherit;text-decoration-line: none;">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,</a></h5>
-								<p><span class="date">Oct 25 . 4 min read</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="gutter gutter-spacious js-build-in-trigger build-in-animate row py-8 py-md-9" data-build-margin-bottom="20">
-				<div class="col-md-8">
-					<div class="row">
-						<div class="col-md-8 p-3">
-							<div class="d-flex">
-								<img src="https://miro.medium.com/fit/c/25/25/1*iODVVKJIKo4wOlnO8yO10Q.png">
-								<h6 class="ml-2">Using The Feynman Technique</h6>
-							</div>
-							<h2 class=""><a href="#" style="color: inherit;text-decoration-line: none;">Learn Anything Faster By Using The Feynman Technique</a></h2>
-							<p><a href="#" style="color: inherit;text-decoration-line: none;">Richard Feynman is considered to be one of the most miraculous personalities in scientific history. The 1965 Nobel prize winner on</a></p>
-							<p><span>Oct 9 · 6 min read</span><button class="btn btn-default btn-sm ml-2">read more</button>
-								<svg width="25" height="25" viewBox="0 0 25 25" fill="none" class="ls" style="float: right;"><path d="M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z" fill="#292929"></path></svg></p>
-						</div>
-						<div class="col-md-4 p-3">
-							<img src="assets/images/1_xv8Z3XCtJ-pNQKaI7avhtA.jpeg" style="width: 100%;"> 
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-8 p-3">
-							<div class="d-flex">
-								<img src="https://miro.medium.com/fit/c/25/25/1*iODVVKJIKo4wOlnO8yO10Q.png">
-								<h6 class="ml-2">Using The Feynman Technique</h6>
-							</div>
-							<h2 class=""><a href="#" style="color: inherit;text-decoration-line: none;">Learn Anything Faster By Using The Feynman Technique</a></h2>
-							<p><a href="#" style="color: inherit;text-decoration-line: none;">Richard Feynman is considered to be one of the most miraculous personalities in scientific history. The 1965 Nobel prize winner on</a></p>
-							<p><span>Oct 9 · 6 min read</span><button class="btn btn-default btn-sm ml-2">read more</button>
-								<svg width="25" height="25" viewBox="0 0 25 25" fill="none" class="ls" style="float: right;"><path d="M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z" fill="#292929"></path></svg></p>
-						</div>
-						<div class="col-md-4 p-3">
-							<img src="assets/images/1_xv8Z3XCtJ-pNQKaI7avhtA.jpeg" style="width: 100%;"> 
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-8 p-3">
-							<div class="d-flex">
-								<img src="https://miro.medium.com/fit/c/25/25/1*iODVVKJIKo4wOlnO8yO10Q.png">
-								<h6 class="ml-2">Using The Feynman Technique</h6>
-							</div>
-							<h2 class=""><a href="#" style="color: inherit;text-decoration-line: none;">Learn Anything Faster By Using The Feynman Technique</a></h2>
-							<p><a href="#" style="color: inherit;text-decoration-line: none;">Richard Feynman is considered to be one of the most miraculous personalities in scientific history. The 1965 Nobel prize winner on</a></p>
-							<p><span>Oct 9 · 6 min read</span><button class="btn btn-default btn-sm ml-2">read more</button>
-								<svg width="25" height="25" viewBox="0 0 25 25" fill="none" class="ls" style="float: right;"><path d="M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z" fill="#292929"></path></svg></p>
-						</div>
-						<div class="col-md-4 p-3">
-							<img src="assets/images/1_xv8Z3XCtJ-pNQKaI7avhtA.jpeg" style="width: 100%;"> 
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<h5 class="mb-3">DISCOVER MORE OF WHAT MATTERS TO YOU</h5>
-					<div class="border-bottom">
-						<a href="#" class="btn btn-outline-secondary mb-3">Self</a>
-						<a href="#" class="btn btn-outline-secondary mb-3">Relationships</a>
-						<a href="#" class="btn btn-outline-secondary mb-3">Data Science</a>
-						<a href="#" class="btn btn-outline-secondary mb-3">Relationships</a>
-						<a href="#" class="btn btn-outline-secondary mb-3">Self</a>
-						<a href="#" class="btn btn-outline-secondary mb-3">Data Science</a>
-						<a href="#" class="btn btn-outline-secondary mb-3">Relationships</a>
-						<a href="#" class="btn btn-outline-secondary mb-3">Self</a>
-						<a href="#" class="btn btn-outline-secondary mb-3">Data Science</a>
-					</div>
-					<div class="list-link">
-						<ul class="nav">
-						  <li class="nav-item">
-						    <a class="nav-link active" aria-current="page" href="#">Status</a>
-						  </li>
-						  <li class="nav-item">
-						    <a class="nav-link" href="#">Writers</a>
-						  </li>
-						  <li class="nav-item">
-						    <a class="nav-link" href="#">Blog</a>
-						  </li>
-						  <li class="nav-item">
-						    <a class="nav-link disabled">Careers</a>
-						  </li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</main>
+	
+<form class="mx-auto mx-md-0 col-5-max js-signup-form position-relative z-2" autocomplete="off" action="/signup" accept-charset="UTF-8" method="get">              
+<div class="d-flex flex-column flex-sm-row flex-items-center">
+		
+		<a href="mailto: contact@dithereum.org" 
+		class="btn-mktg btn-primary-mktg width-full width-sm-auto">
+		Contact us
+	</a>
+</div>
+</form>
+<div class="position-lg-absolute bottom-lg-8 left-lg-0 right-lg-0 mt-4 z-1 position-relative">
 
 </div>
+</div>
+
+<div class="col-12 col-lg-6 text-center position-relative" style="
+">
+<div class="home-globe-container home-globe-container-webgl" data-feature="home_page_globe" data-show-when-feature-enabled="true" data-feature-hydro="{&quot;event_type&quot;:&quot;feature_flag_decision&quot;,&quot;payload&quot;:{&quot;feature&quot;:&quot;home_page_globe&quot;,&quot;originating_url&quot;:&quot;&quot;,&quot;user_id&quot;:null}}" data-feature-hydro-hmac="be0cbc7da2f32edf891ea5670441a984e859ce28aaba3fb91263d03f7c5a368d">
+<div class="mx-auto width-full mt-n9 mt-lg-2 home-globe position-relative height-full js-webgl-globe">
+
+				<video width="900" height="900" src="assets/video/video6.mp4" loop muted autoplay></video>
+
+	
+</div>
+</div>
+
+<div class="home-globe-container" data-feature="home_page_globe" data-show-when-feature-enabled="false" hidden="">
+<div class="mx-auto width-full mt-n9 mt-lg-2 home-globe position-relative height-full">
+<img srcset="https://Dithereum.Dithereumassets.com/images/modules/site/home/globe-700.jpg 700w,
+https://Dithereum.Dithereumassets.com/images/modules/site/home/globe.jpg 1400w" sizes="(max-width: 700px) 70vw, 700px" src="https://Dithereum.Dithereumassets.com/images/modules/site/home/globe.jpg" alt="Planet earth with visualization of Dithereum activity crossing the globe" class="width-full height-auto js-globe-fallback-image" loading="lazy" decoding="async" width="1238" height="1404">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<img src="assets/images/hero-glow.svg" alt="Glowing universe" class="position-absolute home-hero-glow events-none z-1">
+<video loop muted playsinline preload="none" class="js-globe-aurora position-absolute top-0 left-0 right-0 bottom-0" style="margin: auto; z-index: -1; min-width: 100%; min-height: 100%;" hidden>
+<source type="video/mp4; codecs=avc1.4D401E,mp4a.40.2" src="assets/images/aurora.h264.mp4">
+</video>
+</div>
+
+<div class="position-absolute width-full color-bg-primary" style="bottom: 1rem;">
+<div class="container-xl p-responsive">
+<div class="d-flex flex-justify-center flex-lg-justify-end color-bg-primary">
+<div class="col-8 col-sm-7 col-md-6 col-lg-5 position-relative z-2 right-lg-n12 events-none">
+<picture>
+<source srcset="assets/images/astro-mona.webp" type="image/webp">
+<img src="assets/images/astro-mona.svg" width="960" height="967" class="home-astro-mona width-full position-absolute bottom-0 height-auto" alt="Mona looking at Dithereum activity across the globe">
+</picture>
+</div>
+</div>
+</div>
+</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 1680 40" class="position-absolute width-full z-1" style="bottom: -1px;"><path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path></svg>
+
+</div>
+
+<div class="overflow-hidden">
+<div class="mx-auto container-xl p-responsive py-8 py-md-9">
+<div class="d-flex gutter gutter-spacious js-build-in-trigger" data-build-margin-bottom="20">
+<div class="col-10-max mx-auto">
+<div class="js-build-in-item build-in-scale-fade color-bg-primary rounded-2 box-shadow-card-border-mktg overflow-hidden">
+
+
+<div class="flash-banner-new">
+	<img src="assets/images/baas.png" style="width: 100%;">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-8 position-absolute text-right position-relative height-full right-0">
+<picture>
+<source srcset="assets/images/baas.png" type="image/webp">
+<img src="assets/images/baas.png" class="width-full height-auto position-absolute right-0 bottom-0" alt="Futuristic city scape" loading="lazy" decoding="async" width="1376" height="436">
+</picture>
+</div>
+</div>
+</div>
+
+<div class="position-relative pt-5 mt-5">
+<div class="position-absolute left-0 width-full height-full js-build-in-trigger" data-build-non-decorative="true" data-build-margin-bottom="100" data-build-threshold="0" style="top: -4rem;">
+<div class="mb-4 top-0 home-nav-outer js-build-in-item width-full z-3">
+<div class="home-nav width-full js-toggler-container">
+<div class="home-nav-bg position-fixed top-0 left-0 width-full height-full z-n1 color-bg-canvas-inverse js-toggler-target-off" style="opacity: 0.8"></div>
+<div class="px-md-4 py-2 color-bg-primary">
+<div class="home-nav-container mx-auto col-10-max d-flex flex-justify-between">
+<button type="button" class="home-nav-trigger text-left js-toggler-target d-inline-block d-md-none py-2 px-3" aria-label="Toggle page navigation">
+<svg class="octicon octicon-three-bars color-text-primary replaced color-text-primary" viewBox="0 0 16 16" height="24"><path clip-rule="evenodd" d="m1 2.75c0-.19891.07902-.38968.21967-.53033s.33142-.21967.53033-.21967h12.5c.1989 0 .3897.07902.5303.21967.1407.14065.2197.33142.2197.53033s-.079.38968-.2197.53033c-.1406.14065-.3314.21967-.5303.21967h-12.5c-.19891 0-.38968-.07902-.53033-.21967s-.21967-.33142-.21967-.53033zm0 5c0-.19891.07902-.38968.21967-.53033s.33142-.21967.53033-.21967h12.5c.1989 0 .3897.07902.5303.21967.1407.14065.2197.33142.2197.53033s-.079.38968-.2197.53033c-.1406.14065-.3314.21967-.5303.21967h-12.5c-.19891 0-.38968-.07902-.53033-.21967s-.21967-.33142-.21967-.53033zm.75 4.25c-.19891 0-.38968.079-.53033.2197-.14065.1406-.21967.3314-.21967.5303s.07902.3897.21967.5303c.14065.1407.33142.2197.53033.2197h12.5c.1989 0 .3897-.079.5303-.2197.1407-.1406.2197-.3314.2197-.5303s-.079-.3897-.2197-.5303c-.1406-.1407-.3314-.2197-.5303-.2197z" fill-rule="evenodd"></path></svg>
+
+<svg class="octicon octicon-x color-text-primary" height="24" viewBox="0 0 24 24" width="16"><path clip-rule="evenodd" d="m6.21967 6.21967c.29289-.29289.76777-.29289 1.06066 0l4.71967 4.71963 4.7197-4.71963c.2929-.29289.7677-.29289 1.0606 0s.2929.76777 0 1.06066l-4.7196 4.71967 4.7196 4.7197c.2929.2929.2929.7677 0 1.0606s-.7677.2929-1.0606 0l-4.7197-4.7196-4.71967 4.7196c-.29289.2929-.76777.2929-1.06066 0s-.29289-.7677 0-1.0606l4.71963-4.7197-4.71963-4.71967c-.29289-.29289-.29289-.76777 0-1.06066z" fill-rule="evenodd"></path></svg>
+
+</button>
+
+<div class="home-nav-links-container d-flex flex-auto flex-md-items-center">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="overflow-hidden">
+<meta property="page-title" content="Dithereum: Where the world builds software">
+<meta property="page-description" content="Dithereum is where over 65 million developers shape the future of software, together. Contribute to the open source community, manage your Dithereum repositories, review code like a pro, track bugs and features, power your CI/CD and DevOps workflows, and secure code before you commit it.">
+
+<div class="position-relative z-2 mx-auto box-shadow-default-mktg wide-block js-section" id="home-code">
+<div class="container-xl p-responsive">
+<div class="d-flex flex-column gutter gutter-spacious">
+<div class="col-12 col-sm-10 offset-sm-1">
+<div class="col-12-max">
+<h2 class="h2-mktg color-text-white mb-6 mb-md-8 text-gradient-mint-blue-dark">Leverage the blockchain technology to enhance your business </h2>
+</div>
+</div>
+
+<div class="col-11 col-sm-10 offset-1">
+<ul class="home-git-log-dark d-flex gutter gutter-spacious flex-column list-style-none pb-5">
+<li class="col-12 col-md-9 col-lg-6 mt-n3 pb-4">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" height="28" viewBox="0 0 28 20" width="28" aria-hidden="true" class="home-git-icon home-git-item float-left mr-n6 position-relative z-1"><circle cx="14" cy="10" fill="#fff" r="5" stroke="#d0d6df" stroke-width="2"></circle></svg>
+
+<h3 class="f2-mktg text-gray-light-mktg text-semibold mb-3"> <span class="color-text-white"> 
+Whether you want to launch your own blockchain platform like Dithereum or you are already running a small or large business, you can use the Dithereum platform to develop your infrastructure and take your business to the next level.
+</span></h3>
+<a class="link-bump-mktg mr-3 text-semibold color-text-primary no-underline d-inline-block color-text-white f4-mktg pt-2 pb-3 link-bump-underlined-mktg" href="/" target="_blank" data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Sign up&quot;,&quot;action&quot;:&quot;click to sign up for account&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Sign up for Dithereum;ref_loc:code launchpad&quot;,&quot;originating_url&quot;:&quot;&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="27e89dfe3a82ce0ed8c8a0e59e285b098a21d46dcff1b7175af9056efd5e82e8">
+<span class="position-relative link-bump-inner-mktg">Read the whitepaper <span class=""><svg xmlns="http://www.w3.org/2000/svg" class="octicon octicon-chevrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path>
+<path class="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path></svg>
+</span></span>
+</a>
+
+</li>
+
+
+
+
+</ul>
+</div>
+
+
+
+
+<div class="col-11 col-sm-10 offset-1">
+<ul class="home-git-log-dark d-flex gutter gutter-spacious flex-column list-style-none pt-5 pb-8 pb-md-9">
+
+
+
+<li class="col-12 col-md-9 col-lg-12">
+<div class="d-flex flex-column flex-lg-row flex-lg-row-reverse flex-items-center gutter gutter-spacious my-4">
+<div class="col-12 col-lg-6 py-5 js-build-in build-in-slideX-left">
+<h2 class="h3-mktg color-text-white mb-3 text-gradient-mint-blue-dark"> Key Benefits </h2>
+<h3 class="f2-mktg text-gray-light-mktg lh-condensed text-semibold mb-3">
+	<br>
+	<span class="color-text-white"> &bull; Security via DPoS Consensus</span><br><br>
+	<span class="color-text-white"> &bull; Croos-chain Assets Bridge</span><br><br>
+	<span class="color-text-white"> &bull; Fully EVM Compatible</span><br><br>
+	<span class="color-text-white"> &bull; Highly Scalable Infrastructure</span>
+	
+</h3>
+</div>
+
+<div class="col-12 col-lg-6" aria-hidden="true">
+<div class="position-relative">
+	<div class="rounded-2 home-packages-terminal f5-mktg p-4 text-mono">
+		<pre class="pre-line color-text-white home-pre js-type-in">
+			<span class="text-bold code-pink">→</span> <span class="text-bold code-green">~/dithereum-demo</span> <span class="js-type-letters">npm install web3</span>
+			<span class="js-type-row">+ web3@1.5.2</span>
+			<span class="js-type-row">&nbsp;&nbsp;added 109 packages from 64 contributors and audited 109 packages in 3.491s</span>
+			<span class="js-type-row"> </span>
+			<span class="js-type-row">9 packages are looking for funding</span>
+			<span class="js-type-row">&nbsp;&nbsp;run `npm fund` for details</span>
+			<span class="js-type-row"></span>
+			<span class="js-type-row">found 0 vulnerabilities</span>
+			<span class="js-type-row"><span class="text-bold code-pink">→</span> <span class="text-bold code-green">~/dithereum-demo</span></span> <span class="js-type-letters"> </span>
+		</pre>
+	</div>
+
+	<img src="assets/images/repo-terminal-glow.svg" class="position-absolute z-n1" style="width: 150%; margin: 0 -25%; top: 50%; transform: translateY(-50%);" alt="Light glowing behind the editor" loading="lazy">
+</div>
+</div>
+</div>
+</li>
+
+<br>
+<div class="d-flex flex-column flex-sm-row flex-items-center">
+		
+		<a href="mailto: contact@dithereum.org" 
+		class="btn-mktg btn-primary-mktg width-full width-sm-auto">
+		Contact us
+	</a>
+</div>
+
+
+</ul>
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+																
+
+
+
 
 <!-- footer -->
 
@@ -433,9 +610,6 @@ You can’t perform that action at this time.
 </clipboard-copy>
 </div>
 </template>
-
-
-
 
 </body>
 </html>
