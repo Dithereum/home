@@ -23,6 +23,13 @@ background-color: #000000!important;
 .bg-gray-dark-mktg {
 background-color: #000000!important;
 }
+
+.home-hero-container-sponsers{
+	height: 94vh;
+    min-height: 700px!important;
+}
+
+
 </style>
 
 <link crossorigin="anonymous" media="all" rel="stylesheet" href="assets/dithereum-4a950b722035c96861c25c2d643184e8.css" />
@@ -92,14 +99,13 @@ $("#footer").load("footer.html");
 <meta property="og:image:height" content="620">
 
 <link rel="preload" href="assets/data/data.json" as="fetch" type="application/json">
-<link rel="preload" href="static/fonts/alliance/Alliance-No-1-ExtraBold.woff2" as="font" type="font/woff" crossorigin>
-<link rel="preload" href="static/fonts/alliance/Alliance-No-1-Regular.woff2" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="assets/fonts/Alliance-No-1-ExtraBold.woff2" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="assets/fonts/Alliance-No-1-Regular.woff2" as="font" type="font/woff" crossorigin>
 
 <meta name="browser-optimizely-client-errors-url" content="https://api.Dithereum.com/_private/browser/optimizely_client/errors">
 
-<link rel="mask-icon" href="pinned-octocat.svg" color="#000000">
-<link rel="alternate icon" class="js-site-favicon" type="image/png" href="favicons/favicon.png">
-<link rel="icon" class="js-site-favicon" type="image/svg+xml" href="favicons/favicon.svg">
+
+<link rel="alternate icon" class="js-site-favicon" type="image/png" href="assets/images/DithereumIconFavicon.png">
 
 <meta name="theme-color" content="#1e2327">
 
@@ -185,9 +191,9 @@ data-issue-and-pr-hovercards-enabled
 
 <main class="font-mktg">
 	<div class="overflow-hidden">
-		<div class="home-hero-container position-relative js-webgl-globe-data" style="min-height: 660px;">
+		<div class="home-hero-container home-hero-container-sponsers position-relative js-webgl-globe-data" style="min-height: 660px;">
 			<div class="home-hero position-absolute z-1 top-0 right-0 bottom-0 left-0 overflow-hidden" style="padding: 8rem 0 0;">
-				<div class="d-flex flex-column flex-justify-between mx-auto container-xl p-responsive height-full pb-md-9">
+				<div class="d-flex flex-column flex-justify-between mx-auto container-xl p-responsive height-full">
 					<div class="d-flex gutter gutter-spacious flex-column flex-lg-row flex-items-center height-full px-0 px-lg-3">
 						<div class="ml-md-n3 mr-md-3 col-12 col-lg-6 text-center text-md-left">
 							<h1 class="h1-mktg color-text-white mb-3 position-relative z-2"> Dithereum Sponsors </h1>
@@ -196,14 +202,17 @@ data-issue-and-pr-hovercards-enabled
 
 						<div class="col-12 col-lg-6 text-center text-md-left position-relative" style="
 						">
-				
+							<div class="mx-auto width-full mt-lg-2 home-globe position-relative height-full js-webgl-globe text-center">
+								<img src="assets/images/sponsor.png" alt="enterprises" style="width: 80%;">
+					
+							</div>
 						</div>
 
 					</div>
 				</div>
 
 				<img src="assets/images/hero-glow.svg" alt="Glowing universe" class="position-absolute home-hero-glow events-none z-1">
-				
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 1680 40" class="position-absolute width-full z-1" style="bottom: -1px;"><path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path></svg>
 			</div>	
 		</div>
 	</div>
