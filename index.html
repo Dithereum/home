@@ -39,50 +39,63 @@
 			.pricing-tabel .list-style-none .mr-15{
 			margin-right: 30px;
 			}
-			.pricing-tabel ul li{
-			list-style-type: none;
+			.pricing-tabel ul li .card.card-first{
+				width: 18rem;
+			}
+			.pricing-tabel ul li .card{
+				width: 8rem;
+			}
 
+			.pricing-tabel ul li{
+				list-style-type: none;
 			}
 			.pricing-tabel ul li .card {
-			text-align: center;
+				text-align: center;
 			}
 			.pricing-tabel ul li .card ul li{
-			margin-bottom: 15px;
-			text-align: center;
+				margin-bottom: 15px;
+				text-align: center;
 			}
 
 			.pricing-tabel ul li .card img{
-			width: 30px;
+				width: 30px;
 			}
 
 			.pricing-tabel ul li:first-child .card{
-			border: none;
-			box-shadow: none;
-			text-align: left;
+				border: none;
+				box-shadow: none;
+				text-align: left;
 			}
 			.pricing-tabel ul li .card{
-			background-color: transparent;
-			width: 8rem;
-			border: 2px	solid #ffffff;
-			border-radius: 4px;
-			padding: 10px;
-			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+				background-color: transparent;
+				width: 8rem;
+				border: 2px solid #9df2d0;
+				border-radius: 4px;
+				padding: 10px;
+				box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 			}
+			.pricing-tabel ul li:last-child .card{
+				box-shadow: 0 0 5px 5px #a263db;
+    			border: 2px solid #49244f;
+			}
+
 			.pricing-tabel .list-style-none .mr-15:last-child {
-			margin-right: 0;
+				margin-right: 0;
 			}
 			.build-in-animate .home-nav .home-nav-hidden {
 			    flex: none!important;
 			}
 			.btn-transparent{
 				width: 50%!important;
+				text-align: center;
 			}
-
-
 
 			@media (min-width: 768px){
 				.home-repo-editor {
 				    padding-top: calc(500 / 1248 * 100%)!important;
+				}
+				.pricing-tabel .d-lg-flex {
+				    display: flex !important;
 				}
 			}
 			@media (min-width: 1012px){
@@ -140,14 +153,31 @@
 				}
 
 				.home-repo-editor {
-			    	min-height: 500px;
+			    	min-height: 540px!important;
 				}
 
 			@media (max-width: 576px){
-				
+				.h1-mktg {
+				    font-size: 30px!important;
+				}
 				.btn-transparent{
 					margin-bottom: 15px;
 			    	margin-right: 0!important;
+			    	width: 100%!important;
+				}
+
+				.btn-primary-mktg{
+					width: 100%!important;
+				}
+
+				.pricing-tabel ul li {
+				    list-style-type: none;
+				    width: 100%;
+				    margin-right: 0px!important;
+				    margin-bottom: 15px;
+				}
+				.pricing-tabel ul li .card{
+					width: 100%;
 				}
 			}
 
@@ -167,7 +197,7 @@
 		</script> 
 
 		<script crossorigin="anonymous" defer="defer" type="application/javascript" src="assets/environment-35e7e763.js"></script>
-		<script crossorigin="anonymous" defer="defer" type="application/javascript" src="assets/chunk-frameworks-61db89fd.js"></script>
+		<!-- <script crossorigin="anonymous" defer="defer" type="application/javascript" src="assets/chunk-frameworks-61db89fd.js"></script> -->
 		<script crossorigin="anonymous" defer="defer" type="application/javascript" src="assets/chunk-vendor-a518e511.js"></script>
 
 		<script crossorigin="anonymous" defer="defer" type="application/javascript" src="assets/behaviors-4a43d054.js"></script>
@@ -277,8 +307,7 @@ data-issue-and-pr-hovercards-enabled
 <form class="mx-auto mx-md-0 col-5-max js-signup-form position-relative z-2" autocomplete="off" action="/signup" accept-charset="UTF-8" method="get">              
 <div class="d-flex flex-column flex-sm-row flex-items-center">
 		<a href="/assets/docs/Dithereum-Whitepaper.pdf" target="_blank"
-class="btn-mktg btn-transparent width-full width-sm-auto mr-2"
- style="width: 200px!important;text-align: center;">
+class="btn-mktg btn-transparent width-full width-sm-auto mr-2">
 	Whitepaper
 </a>
 		<a href="https://docs.dithereum.org/#/" target="_blank"
@@ -503,12 +532,11 @@ class="HeaderMenu-link flex-shrink-0 d-inline-block no-underline border color-bo
 	<div class="title-text text-center my-5">
 		<h3>TOP-TIER BLOCKCHAIN PLATFORM COMPARISON</h3>
 	</div>
-<ul class="nav d-flex d-lg-flex list-style-none" style="justify-content: center;">
+<ul class="nav d-lg-flex list-style-none" style="justify-content: center;">
 	<li class="mr-15 pt-2">
-		<div class="card" style="width: 14rem;">
+		<div class="card card-first">
 		  <div class="my-5"></div>
 		  <ul class="list-group list-group-flush">
-		  	
 		  	<li class="list-group-item text-left">Blockchain Generation</li>
 		  	<li class="list-group-item text-left">Transactions per second </li>
 		  	<li class="list-group-item text-left">Finality Time</li>
@@ -518,17 +546,13 @@ class="HeaderMenu-link flex-shrink-0 d-inline-block no-underline border color-bo
 		  	<li class="list-group-item text-left">Consensus Algorithm</li>
 		    <li class="list-group-item text-left">Smart Contracts</li>
 		    <li class="list-group-item text-left">On-chain Governance</li>
-		    
-		    
-		    
 		  </ul>
 		</div>
 	</li>
 	<li class="mr-15">
-		<div class="card" style="width: 8rem;">
+		<div class="card">
 		  <img src="assets/images/blockchains/btc.png" class="card-img-top" alt="Dithereum">
 		  <ul class="list-group list-group-flush">
-		  	
 		  	<li class="list-group-item">1st gen</li>
 		  	<li class="list-group-item">7</li>
 		  	<li class="list-group-item">30 - 60 Minutes</li>
@@ -538,13 +562,11 @@ class="HeaderMenu-link flex-shrink-0 d-inline-block no-underline border color-bo
 		  	<li class="list-group-item">Proof of Work</li>
 		    <li class="list-group-item">No</li>
 		    <li class="list-group-item">No</li>
-		    
-		    
 		  </ul>
 		</div>
 	</li>
 	<li class="mr-15">
-		<div class="card" style="width: 8rem;">
+		<div class="card">
 		  <img src="assets/images/blockchains/eth.png" class="card-img-top" alt="Dithereum">
 		  <ul class="list-group list-group-flush">
 		    <li class="list-group-item">2nd gen</li>
@@ -560,7 +582,7 @@ class="HeaderMenu-link flex-shrink-0 d-inline-block no-underline border color-bo
 		</div>
 	</li>
 	<li class="mr-15">
-		<div class="card" style="width: 8rem;">
+		<div class="card">
 		  <img src="assets/images/blockchains/bsc.png" class="card-img-top" alt="Dithereum">
 		  <ul class="list-group list-group-flush">
 		    <li class="list-group-item">2nd gen</li>
@@ -576,7 +598,7 @@ class="HeaderMenu-link flex-shrink-0 d-inline-block no-underline border color-bo
 		</div>
 	</li>
 	<li class="mr-15">
-		<div class="card" style="width: 8rem;">
+		<div class="card">
 		  <img src="assets/images/blockchains/sol.png" class="card-img-top" alt="Dithereum">
 		  <ul class="list-group list-group-flush">
 		    <li class="list-group-item">3rd gen</li>
@@ -592,7 +614,7 @@ class="HeaderMenu-link flex-shrink-0 d-inline-block no-underline border color-bo
 		</div>
 	</li>
 	<li class="mr-15">
-		<div class="card" style="width: 8rem;">
+		<div class="card">
 		  <img src="assets/images/blockchains/dth.png" class="card-img-top" alt="Dithereum">
 		  <ul class="list-group list-group-flush">
 		    <li class="list-group-item">3rd gen</li>
@@ -610,6 +632,7 @@ class="HeaderMenu-link flex-shrink-0 d-inline-block no-underline border color-bo
 	
 </ul>
 </div>
+<img src="assets/images/hero-glow.svg" alt="Glowing universe" class="position-absolute home-hero-glow events-none z-1">
 </div>
 </div> 
 
@@ -1053,7 +1076,7 @@ class="HeaderMenu-link flex-shrink-0 d-inline-block no-underline border color-bo
 <p class="f2-mktg text-gray-light-mktg mr-lg-n4 mb-4 text-normal"> Leverage the Dithereum platform to build your Dapp on any (Proof of Concepts) PoS such as Dex, Defi, Games, NFTs, etc. </p>
 
 <a href="https://docs.dithereum.org/#/" target="_blank"
-class="btn-mktg btn-transparent width-full width-sm-auto mb-2"
+class="btn-mktg btn-transparent width-100 width-full width-sm-auto mb-2"
 data-hydro-click="{&quot;event_type&quot;:&quot;analytics.event&quot;,&quot;payload&quot;:{&quot;category&quot;:&quot;Contact Sales&quot;,&quot;action&quot;:&quot;click to Contact Sales&quot;,&quot;label&quot;:&quot;ref_page:/;ref_cta:Contact Sales;ref_loc:footer launchpad&quot;,&quot;originating_url&quot;:&quot;&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="c62a9e1d90673366ecd4f5d8a6465f39b40aede4b5c6f11d2138efb5ec10cfa8"
 >
 Go to developer documentation
