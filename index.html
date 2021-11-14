@@ -2,7 +2,7 @@
 <html lang="en" >
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="Content-Security-Policy" content="Content-Security-Policy: default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self'; frame-ancestors 'self'; form-action 'self';">
+		<!-- <meta http-equiv="Content-Security-Policy" content="Content-Security-Policy: default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self'; frame-ancestors 'self'; form-action 'self';"> -->
 
 		<link crossorigin="anonymous" media="all" rel="stylesheet" href="assets/light-327c05026583e0deae6cdb4a583e3b84.css" />
 		<link crossorigin="anonymous" media="all" rel="stylesheet" href="assets/dark-c5cc774753662a380e004d83b021d86e.css" />
@@ -27,6 +27,11 @@
 			.home-astro-mona {
 			left: 50%!important;
 			max-width: 234px!important;
+			}
+
+			.home-repo-editor {
+			    padding-top: 0!important;
+			    min-height: auto!important;
 			}
 
 			.pricing-tabel {
@@ -93,9 +98,9 @@
 			}
 
 			@media (min-width: 768px){
-				.home-repo-editor {
+				/*.home-repo-editor {
 				    padding-top: calc(500 / 1248 * 100%)!important;
-				}
+				}*/
 				.pricing-tabel .d-lg-flex {
 				    display: flex !important;
 				}
@@ -154,9 +159,9 @@
 					width: 50%!important;
 				}
 
-				.home-repo-editor {
+				/*.home-repo-editor {
 			    	min-height: 540px!important;
-				}
+				}*/
 
 			@media (max-width: 576px){
 				.h1-mktg {
@@ -240,8 +245,8 @@
 		<meta property="og:image:height" content="620">
 
 		<link rel="preload" href="assets/data/data.json" as="fetch" type="application/json">
-		<link rel="preload" href="assets/fonts/alliance/Alliance-No-1-ExtraBold.woff2" as="font" type="font/woff" crossorigin>
-		<link rel="preload" href="assets/fonts/alliance/Alliance-No-1-Regular.woff2" as="font" type="font/woff" crossorigin>
+	<!-- 	<link rel="preload" href="assets/fonts/alliance/Alliance-No-1-ExtraBold.woff2" as="font" type="font/woff" crossorigin>
+		<link rel="preload" href="assets/fonts/alliance/Alliance-No-1-Regular.woff2" as="font" type="font/woff" crossorigin> -->
 
 		<meta name="browser-optimizely-client-errors-url" content="https://api.Dithereum.com/_private/browser/optimizely_client/errors">
 
@@ -528,9 +533,9 @@ class="HeaderMenu-link flex-shrink-0 d-inline-block no-underline border color-bo
 <div class="position-relative z-2">
 
 <div class="home-repo-editor rounded-2 position-relative mr-n1 ml-n1 mr-md-0 ml-md-0 overflow-hidden">
-<div class="d-flex position-absolute top-0 right-0 bottom-0 left-0">
+<div class="d-flex top-0 right-0 bottom-0 left-0">
 
-<div class="pricing-tabel p-3" style="width: 100%; overflow-x: auto;">
+<!-- <div class="pricing-tabel p-3" style="width: 100%; overflow-x: auto;">
 	<div class="title-text text-center my-5">
 		<h3>TOP-TIER BLOCKCHAIN PLATFORM COMPARISON</h3>
 	</div>
@@ -633,8 +638,9 @@ class="HeaderMenu-link flex-shrink-0 d-inline-block no-underline border color-bo
 	</li>
 	
 </ul>
-</div>
-<img src="assets/images/hero-glow.svg" alt="Glowing universe" class="position-absolute home-hero-glow events-none z-1">
+</div> -->
+<img src="assets/images/pricingtable2.png" alt="Glowing universe" class="" style="width: 100%;">
+<!-- <img src="assets/images/hero-glow.svg" alt="Glowing universe" class="position-absolute home-hero-glow events-none z-1"> -->
 </div>
 </div> 
 
