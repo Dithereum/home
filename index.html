@@ -9,7 +9,127 @@
 
 		<link crossorigin="anonymous" media="all" rel="stylesheet" href="assets/frameworks-11123586ef21c5fa694b968f9435dd73.css" />
 		<link crossorigin="anonymous" media="all" rel="stylesheet" href="assets/behaviors-dbc725588aaef4eab4c5384e5c470707.css" />
+		<style>
 
+				#fvpp-blackout {
+			  display: none;
+			  z-index: 499;
+			  position: fixed;
+			  width: 100%;
+			  height: 100%;
+			  top: 0;
+			  left: 0;
+			  background: #000;
+			  opacity: 0.5;
+			}
+
+			#my-welcome-message {
+			  display: none;
+			  z-index: 500;
+			  position: fixed;
+			  width: 36%;
+			  left: 30%;
+			  top: 20%;
+			  padding: 20px 2%;
+			  font-family: Calibri, Arial, sans-serif;
+			  background: #FFF;
+			}
+
+			#myModal #fvpp-close {
+			  position: absolute;
+			  /*top: 10px;
+			  right: 20px;*/
+			  cursor: pointer;
+			  display: none;
+			}
+			#myModal #fvpp-close.close {
+			 display: block;
+			}
+
+			#fvpp-dialog h2 {
+			  font-size: 2em;
+			  margin: 0;
+			}
+
+			#fvpp-dialog p { margin: 0; }
+
+			.modal {
+			  display: none; 
+			  position: fixed; 
+			  z-index: 1400;
+			  padding-top: 100px; 
+			  left: 0;
+			  top: 0;
+			  width: 100%; 
+			  height: 100%; 
+			  overflow: auto; 
+			  background-color: rgb(0,0,0); 
+			  background-color: rgba(0,0,0,0.4); 
+			}
+
+			/* Modal Content */
+			.modal-content {
+			  position: relative;
+			  background-color: transparent;
+			  margin: auto;
+			  padding: 0;
+			  /*border: 1px solid #888;*/
+			  border-radius: 5px;
+			  width: 60%;
+			  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+			  -webkit-animation-name: animatetop;
+			  -webkit-animation-duration: 0.4s;
+			  animation-name: animatetop;
+			  animation-duration: 0.4s
+			}
+
+			/* Add Animation */
+			@-webkit-keyframes animatetop {
+			  from {top:-300px; opacity:0} 
+			  to {top:0; opacity:1}
+			}
+
+			@keyframes animatetop {
+			  from {top:-300px; opacity:0}
+			  to {top:0; opacity:1}
+			}
+
+			/* The Close Button */
+			.close {
+			  	color: white;
+			    float: right;
+			    font-size: 28px;
+			    font-weight: bold;
+			    position: absolute;
+			    top: -27px;
+			    right: -12px;
+			    text-shadow: 0 0 rgb(0 0 0 / 36%);
+			}
+
+			.close:hover,
+			.close:focus {
+			  color: #000;
+			  text-decoration: none;
+			  cursor: pointer;
+			}
+
+			.modal-header {
+			  padding: 2px 16px;
+			  background-color: #5cb85c;
+			  color: white;
+			}
+
+			.modal-body {
+				/*padding: 2px 16px;*/
+				border-radius: 5px;
+			}
+
+			.modal-footer {
+			  padding: 2px 16px;
+			  background-color: #5cb85c;
+			  color: white;
+			}
+			</style>
 		<style>
 			.home-hero-container {
 			min-height: 750px;
@@ -147,6 +267,11 @@
 				}
 				
 			}
+			@media (max-width: 1024px){
+				.modal-content{
+					width: 90%;
+				}
+			}
 			@media (max-width: 768px){
 				.home-nav.on .home-nav-hidden {
 				    text-align: left!important;
@@ -238,6 +363,85 @@
 		        $('.js-toggler-container').toggleClass(' on');
 		    });
 		});
+
+
+
+
+/*
+ * First Visit Popup jQuery Plugin version 1.2
+ */
+
+(function ($) {
+
+	'use strict';
+
+	$.fn.firstVisitPopup = function (settings) {
+
+		var $body = $('body');
+		var $dialog = $(this);
+		var $blackout;
+		var setCookie = function (name, value) {
+			var date = new Date(),
+				expires = 'expires=';
+			date.setTime(date.getTime() + 3600000);
+			expires += date.toGMTString();
+			document.cookie = name + '=' + value + '; ' + expires + '; path=/';
+		}
+		var getCookie = function (name) {
+			var allCookies = document.cookie.split(';'),
+				cookieCounter = 0,
+				currentCookie = '';
+			for (cookieCounter = 0; cookieCounter < allCookies.length; cookieCounter++) {
+				currentCookie = allCookies[cookieCounter];
+				while (currentCookie.charAt(0) === ' ') {
+					currentCookie = currentCookie.substring(1, currentCookie.length);
+				}
+				if (currentCookie.indexOf(name + '=') === 0) {
+					return currentCookie.substring(name.length + 1, currentCookie.length);
+				}
+			}
+			return false;
+		}
+		var showMessage = function () {
+			$blackout.show();
+			$dialog.show();
+		}
+		var hideMessage = function () {
+			$blackout.hide();
+			$dialog.hide();
+			setCookie('fvpp' + settings.cookieName, 'true');
+		}
+
+		$body.append('<div id="fvpp-blackout"></div>');
+		$dialog.append('<a id="fvpp-close">&#10006;</a>');
+		$blackout = $('#fvpp-blackout');
+
+		if (getCookie('fvpp' + settings.cookieName)) {
+			hideMessage();
+		} else {
+			showMessage();
+		}
+
+		$(settings.showAgainSelector).on('click', showMessage);
+		$body.on('click', '#fvpp-blackout, #fvpp-close', hideMessage);
+
+	};
+
+})(jQuery);
+
+/*
+ * First Visit Popup jQuery Plugin version 1.2
+ */
+
+$(function () {
+	$('#myModal').firstVisitPopup({
+		cookieName : 'homepage',
+		showAgainSelector: '#show-message'
+	});
+});
+/*
+ * First Visit Popup jQuery Plugin version 1.2
+ */
 		</script> 
 
 		<script crossorigin="anonymous" defer="defer" type="application/javascript" src="assets/environment-35e7e763.js"></script>
@@ -1375,7 +1579,20 @@ You can’t perform that action at this time.
 </div>
 </template>
 
+<!-- The Modal -->
+<div id="myModal" class="modal">
 
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body">
+      <span id="fvpp-close" class="close">&times;</span>
+      <div onclick="window.open('https://t.me/Dithereum','mywindow');" style="cursor: pointer;">
+	      <img src="assets/images/banner.png" style="width: 100%;border-radius: 5px">
+	  </div>
+    </div>
+  </div>
+
+</div>
 
 <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
 
