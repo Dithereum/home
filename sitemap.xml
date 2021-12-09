@@ -1,22 +1,108 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
-  <loc>https://dithereum.org/</loc>
-  <lastmod>2021-11-21T10:50:14+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://dithereum.org/</loc>
+<lastmod>2021-12-09</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://dithereum.org/assets/docs/Dithereum-Whitepaper.pdf</loc>
-  <lastmod>2021-11-21T10:50:14+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://dithereum.org/assets/docs/Dithereum-Whitepaper.pdf</loc>
+<lastmod>2021-12-09</lastmod>
+<priority>0.80</priority>
 </url>
-
-
+<url>
+<loc>https://docs.dithereum.org/#/wallet</loc>
+<lastmod>2021-12-09</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://explorer.dithereum.org/</loc>
+<lastmod>2021-12-09</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://bridge.dithereum.org/</loc>
+<lastmod>2021-12-09</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://dex.dithereum.org/</loc>
+<lastmod>2021-12-09</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://dithereum.org/sponsors.html</loc>
+<lastmod>2021-12-09</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://drive.google.com/drive/folders/1siFe77PLDsN6Ewm8ODL1I1fJOAXKeLeE?usp=sharing</loc>
+<lastmod>2021-12-09</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://dithereum.org/enterprise.html</loc>
+<lastmod>2021-12-09</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://docs.dithereum.org/#/</loc>
+<lastmod>2021-12-09</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://github.com/Dithereum</loc>
+<lastmod>2021-12-09</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://forms.gle/ruDjqKMGmLfSBarTA</loc>
+<lastmod>2021-12-09</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://faucet.dithereum.org/</loc>
+<lastmod>2021-12-09</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://testnet.dithereum.org/</loc>
+<lastmod>2021-12-09</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://ethereum.stackexchange.com/questions/tagged/dithereum</loc>
+<lastmod>2021-12-09</lastmod>
+<priority>0.50</priority>
+</url>
+<url>
+<loc>https://docs.dithereum.org/#/Foundation</loc>
+<lastmod>2021-12-09</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://docs.dithereum.org/#/Validator</loc>
+<lastmod>2021-12-09</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://docs.dithereum.org/#/Tokenomics</loc>
+<lastmod>2021-12-09</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://dithereum.org/inner-circle.html</loc>
+<lastmod>2021-12-09</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://docs.dithereum.org/#/tos</loc>
+<lastmod>2021-12-09</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://docs.dithereum.org/#/privacy-policy</loc>
+<lastmod>2021-12-09</lastmod>
+<priority>0.80</priority>
+</url>
 </urlset>
